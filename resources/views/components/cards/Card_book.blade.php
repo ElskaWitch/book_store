@@ -1,25 +1,24 @@
 @props(['title', 'price', 'author', 'id'])
 
-<div class="overflow-x-auto">
-		<table class="table w-full">
+<div class="overflow-x-auto grid justify-items-center">
+		<table class="table w-8/12 ">
 				<!-- head -->
 				<thead>
-						<tr>
-								<th></th>
-								<th>Nom du livre</th>
-								<th>Prix</th>
-								<th>Auteur</th>
-								<th>Editer</th>
+						<tr >
+								<th class="bg-indigo-300 w-1/4">Nom du livre</th>
+								<th  class="bg-indigo-300 w-1/4">Prix</th>
+								<th  class="bg-indigo-300 w-1/4">Auteur</th>
+								<th  class="bg-indigo-300 w-1/4 text-center">Editer</th>
 						</tr>
 				</thead>
-				<tbody>
+				<tbody class="">
+				  
 						<!-- body-->
-						<tr>
-								<th>1</th>
-								<td>{{ $title }}</td>
+						<tr class="">
+								<td class="font-bold italic">{{ $title }}</td>
 								<td>{{ $price }}</td>
 								<td>{{ $author }}</td>
-								<td><a href="books/{{$id}}">Voir</a></td>
+								<td class="grid justify-items-center"><a href="books/{{$id}}" class="text-indigo-500 border px-2 rounded-xl font-semibold ">Voir</a></td>
 						</tr>
 				</tbody>
 		</table>
