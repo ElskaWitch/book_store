@@ -1,4 +1,4 @@
-@props(['title', 'price', 'author'])
+@props(['title', 'price', 'author', 'id'])
 
 <div class="overflow-x-auto">
 		<table class="table w-full">
@@ -19,7 +19,7 @@
 								<td>{{ $title }}</td>
 								<td>{{ $price }}</td>
 								<td>{{ $author }}</td>
-								<td><a href="books/{{ $book->id }}">Voir</a></td>
+								<td><a href="books/{{$id}}">Voir</a></td>
 						</tr>
 				</tbody>
 		</table>

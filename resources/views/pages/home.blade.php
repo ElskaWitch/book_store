@@ -4,7 +4,7 @@
 				<div class="" id="container_card">
 						@forelse ($books as $book)
 								<div class="">
-										<x-cards.Card_book :title="$book->title" :price="$book->price" :author="$book->author" />
+										<x-cards.Card_book :title="$book->title" :price="$book->price" :author="$book->author" :id="$book->id" />
 								</div>
 						@empty
 								<p class="text-xl text-[#0e0037]">Pas de livre actuellement</p>

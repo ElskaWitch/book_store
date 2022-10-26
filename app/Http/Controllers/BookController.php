@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\StoreBookRequest;
 use App\Http\Requests\UpdateBookRequest;
 
-class BookContoller extends Controller
+class BookController extends Controller
 {
     /**
      * Display a listing of the resource.
